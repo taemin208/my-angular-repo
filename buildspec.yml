@@ -11,7 +11,8 @@ phases:
   build:
     commands:
       - ng build -c production
-      - echo "Build completed."
+      - exit 1
+      - echo Build error simulation!
     finally:
       - echo This is the finally block execution!
 artifacts:
